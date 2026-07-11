@@ -1,4 +1,4 @@
-# 4. LLM Attack Surface
+# LLM Attack Surface
 
 Large Language Models (LLMs) such as GPT, BERT, Llama, Gemini, Claude, and Mistral are widely used for chatbots, coding assistants, document analysis, search, and business automation. While these models provide significant capabilities, they also introduce a new attack surface that extends beyond traditional application security.
 
@@ -388,3 +388,37 @@ Each component should be continuously monitored and protected using layered secu
 ## Summary
 
 LLMs introduce a unique and rapidly evolving attack surface that spans models, data, infrastructure, prompts, APIs, external tools, and AI supply chains. Common threats include prompt injection, jailbreaking, data poisoning, model theft, sensitive information disclosure, denial-of-service attacks, and supply chain compromise. Organizations should implement layered security controls, continuous monitoring, adversarial testing, privacy-preserving techniques, and Continuous Threat Exposure Management (CTEM) to maintain secure and resilient AI deployments throughout the model lifecycle.
+
+## LLM Attack Surface categories
+Large Language Models (LLMs) introduce new security risks across the model lifecycle, including training, inference, deployment, integrations, and data management. Understanding these attack vectors is essential for building secure AI systems.
+
+
+| Attack Category | Description |
+|-----------------|-------------|
+| **Prompt Injection** | Crafting malicious prompts to manipulate the model into bypassing system instructions, leaking sensitive information, or performing unauthorized actions. |
+| **Training Data Poisoning** | Injecting malicious or biased data into the training dataset to influence the model's behavior and generate incorrect or harmful outputs. |
+| **Agent Manipulation (Agent Alteration)** | Modifying AI agent workflows, routing logic, or autonomous decision-making to execute unintended tasks or interact with unauthorized systems. |
+| **Tool Exploitation** | Abusing external tools, APIs, plugins, or function-calling capabilities connected to an LLM to perform unauthorized operations or access sensitive data. |
+| **Storage Attacks** | Compromising vector databases, embeddings, prompt history, memory stores, or model storage to steal, modify, or corrupt information. |
+| **Model Vulnerabilities** | Exploiting weaknesses in the model architecture or deployment configuration to bypass safeguards, extract sensitive information, or access restricted capabilities. |
+| **Adversarial Attacks** | Crafting specially designed inputs that cause the model to generate incorrect predictions or responses while appearing normal to humans. |
+| **Model Inversion** | Recovering sensitive training data or user information by analyzing the model's outputs. |
+| **Evasion Attacks** | Manipulating inputs to evade AI-based detection systems, such as spam filters, malware classifiers, or content moderation models. |
+| **Model Stealing (Model Extraction)** | Reconstructing or approximating a proprietary model by repeatedly querying it and analyzing its responses. |
+| **Backdoor Attacks** | Embedding hidden triggers during model training so that specific inputs activate malicious or unexpected behavior. |
+| **Resource Exhaustion (Denial-of-Service)** | Sending computationally expensive requests or excessive prompts to consume system resources, causing slowdowns or service outages. |
+| **Misinformation Generation** | Using LLMs to create convincing fake news, phishing content, propaganda, or misleading information at scale. |
+| **Bias Exploitation** | Exploiting existing model biases to generate discriminatory, unfair, or stereotypical responses. |
+| **Decoy and Distraction Attacks** | Crafting inputs that distract or confuse the model, causing it to overlook important instructions, security controls, or malicious content. |
+
+## Key Security Objectives
+
+- Protect training and inference data.
+- Secure prompts, memory, and vector databases.
+- Validate tool and API interactions.
+- Monitor for prompt injection and adversarial inputs.
+- Implement authentication, authorization, and least privilege.
+- Detect model extraction and abnormal query patterns.
+- Apply content filtering and output validation.
+- Continuously monitor and update AI security controls.
+
