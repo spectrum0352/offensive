@@ -385,10 +385,6 @@ Each component should be continuously monitored and protected using layered secu
 
 ---
 
-## Summary
-
-LLMs introduce a unique and rapidly evolving attack surface that spans models, data, infrastructure, prompts, APIs, external tools, and AI supply chains. Common threats include prompt injection, jailbreaking, data poisoning, model theft, sensitive information disclosure, denial-of-service attacks, and supply chain compromise. Organizations should implement layered security controls, continuous monitoring, adversarial testing, privacy-preserving techniques, and Continuous Threat Exposure Management (CTEM) to maintain secure and resilient AI deployments throughout the model lifecycle.
-
 ## LLM Attack Surface categories
 Large Language Models (LLMs) introduce new security risks across the model lifecycle, including training, inference, deployment, integrations, and data management. Understanding these attack vectors is essential for building secure AI systems.
 
@@ -422,3 +418,7 @@ Large Language Models (LLMs) introduce new security risks across the model lifec
 - Apply content filtering and output validation.
 - Continuously monitor and update AI security controls.
 
+
+## Summary
+
+LLMs introduce a unique and rapidly evolving attack surface that spans models, data, infrastructure, prompts, APIs, external tools, and AI supply chains. Common threats include prompt injection, jailbreaking, data poisoning, model theft, sensitive information disclosure, denial-of-service attacks, and supply chain compromise. Organizations should implement layered security controls, continuous monitoring, adversarial testing, privacy-preserving techniques, and Continuous Threat Exposure Management (CTEM) to maintain secure and resilient AI deployments throughout the model lifecycle.
